@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<title>Template</title>
+  <style>
+  .adapevnosug {
+  position: relative;
+  box-shadow: 0px 0px 10px rgba(167, 167, 167, 0.71);
+  margin-top: 26px;
+  border-radius: 20px;
+}
+
+.adapevnosug-edsa {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.adapevnosug-nasav:checked + .adapevnosug-kolas {
+  position: static;
+  opacity: 100;
+}
+
+.adapevnosug-kolas {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+}
+
+.adapevnosug-kolas img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.vealulu-kadsan {
+  background: rgba(0, 0, 0, 0.28);
+  border-radius: 50%;
+  color: #393939;
+  cursor: pointer;
+  display: none;
+  font-size: 40px;
+  height: 40px;
+  line-height: 35px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  cursor: pointer;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  text-align: center;
+  width: 40px;
+  z-index: 10;
+}
+
+.vealulu-kadsan.prev {
+  left: 2%;
+}
+
+.vealulu-kadsan.next {
+  right: 2%;
+}
+
+.vealulu-kadsan:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: #f3be81;
+}
+
+#adapevnosug-1:checked ~ .nedsug-1,
+#adapevnosug-2:checked ~ .nedsug-2,
+#adapevnosug-3:checked ~ .nedsug-3 {
+  display: block;
+}
+
+.esamon-getusa {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.esamon-getusa li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.adapevnosug-bullet {
+  color: #393939;
+  cursor: pointer;
+  display: block;
+  font-size: 35px;
+}
+
+.adapevnosug-bullet:hover {
+  color: #fff;
+}
+
+#adapevnosug-1:checked
+  ~ .nedsug-1
+  ~ .esamon-getusa
+  li:nth-child(1)
+  .adapevnosug-bullet,
+#adapevnosug-2:checked
+  ~ .nedsug-2
+  ~ .esamon-getusa
+  li:nth-child(2)
+  .adapevnosug-bullet,
+#adapevnosug-3:checked
+  ~ .nedsug-3
+  ~ .esamon-getusa
+  li:nth-child(3)
+  .adapevnosug-bullet {
+  color: #99f6ff;
+}
+  </style>
+</head>
+
+<body>
+<div class="adapevnosug">
+  <div class="adapevnosug-edsa">
+  <input class="adapevnosug-nasav" type="radio" id="adapevnosug-1" name="adapevnosug" aria-hidden="true" hidden=""
+  checked="checked">
+  <div class="adapevnosug-kolas">
+  <img src="Первая ссылка на изображение">
+  </div>
+  <input class="adapevnosug-nasav" type="radio" id="adapevnosug-2" name="adapevnosug" aria-hidden="true" hidden="">
+  <div class="adapevnosug-kolas">
+  <img src="Вторая ссылка на картинку">
+  </div>
+  <input class="adapevnosug-nasav" type="radio" id="adapevnosug-3" name="adapevnosug" aria-hidden="true" hidden="">
+  <div class="adapevnosug-kolas">
+  <img src="Третья ссылка на слайд с картинкой">
+  </div>
+  <label for="adapevnosug-3" class="vealulu-kadsan prev nedsug-1">‹</label>
+  <label for="adapevnosug-2" class="vealulu-kadsan next nedsug-1">›</label>
+  <label for="adapevnosug-1" class="vealulu-kadsan prev nedsug-2">‹</label>
+  <label for="adapevnosug-3" class="vealulu-kadsan next nedsug-2">›</label>
+  <label for="adapevnosug-2" class="vealulu-kadsan prev nedsug-3">‹</label>
+  <label for="adapevnosug-1" class="vealulu-kadsan next nedsug-3">›</label>
+  <ol class="esamon-getusa">
+  <li>
+  <label for="adapevnosug-1" class="adapevnosug-bullet">•</label>
+  </li>
+  <li>
+  <label for="adapevnosug-2" class="adapevnosug-bullet">•</label>
+  </li>
+  <li>
+  <label for="adapevnosug-3" class="adapevnosug-bullet">•</label>
+  </li>
+  </ol>
+  </div>
+</div>
+  </body>
+</html>
